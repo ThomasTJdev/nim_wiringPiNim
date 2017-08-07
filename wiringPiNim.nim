@@ -190,13 +190,13 @@ proc piDigitalRead*(pin: cint): cint {.importc.}
   ## This function returns the value read at the given pin. It will be HIGH 
   ## or LOW (1 or 0) depending on the logic level at the pin.
 
-proc piPullOff*(pin: cint): cint {.importc.}
+proc piPullOff*(pin: cint) {.importc.}
   ## Sets the pull-up or pull-down resistor mode to no-pull up/down
 
-proc piPullDown*(pin: cint): cint {.importc.}
+proc piPullDown*(pin: cint) {.importc.}
   ## Sets the pull-up or pull-down resistor mode to pull to ground
 
-proc piPullUp*(pin: cint): cint {.importc.}
+proc piPullUp*(pin: cint) {.importc.}
   ## Sets the pull-up or pull-down resistor mode to pull to 3.3v
 
 proc analogWrite*(pin, value: cint) {.importc.}
