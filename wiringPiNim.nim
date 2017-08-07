@@ -1,6 +1,6 @@
 #[
     Program: wiringPi wrapper to control a Raspberry Pi
-    Author:  ThomasTJ (https://github.com/ThomasTJdev)
+    Author:  Thomas T. Jarløv (https://github.com/ThomasTJdev)
     License: MIT
 ]#
 
