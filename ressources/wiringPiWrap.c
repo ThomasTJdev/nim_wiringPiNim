@@ -1,4 +1,5 @@
 #include <wiringPi.h>
+#include <wiringPiSPI.h>
 
 int piSetup() {
     return wiringPiSetup();
@@ -76,3 +77,10 @@ int analogRead(int pin)
     return analogRead(pin);
 }
 
+int piSPISetup(int channel, int speed) {
+    return wiringPiSPISetup(channel, speed);
+}
+
+int piSPIDataRW (int channel, unsigned char *data, int len) {
+    return wiringPiSPIDataRW (channel, data, len);
+}

@@ -208,3 +208,9 @@ proc analogRead*(pin: cint): cint {.importc.}
   ## This returns the value read on the supplied analog input pin. You will 
   ## need to register additional analog modules to enable this function for
   ## devices such as the Gertboard, quick2Wire analog board, etc.
+
+proc piSPISetup*(channel, speed: cint): cint {.importc.}
+  ## Initialize SPI
+
+proc piSPIDataRW*(channel: cint, data: char, len: cint): cint {.importc.}
+  ## Read Write to SPI
