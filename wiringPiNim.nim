@@ -177,7 +177,7 @@ proc piPinModePWM*(pin: cint) {.importc.}
   ##
   ## Note that only wiringPi pin 1 (BCM_GPIO 18) supports PWM output
 
-proc piDigitalPWM*(pin, value: cint) {.importc.}
+proc piDigitalPWM*(pin, value: cint) {.importc: "piPwmWrite".}
   ## Writes the value to the PWM register for the given pin. The Raspberry
   ## Pi has one on-board PWM pin, pin 1 (BMC_GPIO 18, Phys 12) and the
   ## range is 0-1024. Other PWM devices may have other PWM ranges.
